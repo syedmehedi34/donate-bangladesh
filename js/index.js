@@ -46,7 +46,10 @@ function donateNowButton(event) {
     </div>
     
     `;
-    historySection.appendChild(newHistory);
+    historySection.prepend(newHistory);
+
+    // add history ends    .
+    //
   } else if (restMoney < donationValue) {
     alert("Not Enough Balance");
     event.previousElementSibling.value = "";
